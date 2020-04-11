@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,35 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Form Validator</title>
 </head>
+
 <body>
 
-    <div id="form" class="form">
-        <h3>Learn Geometry</h3>
-        <div class="form-control">
-            <input autocomplete="off" name="username" type="text" id="username" required>
-            <label for="username"><span>Username</span></label>         
+    <div class="svg-wrapper">
+        <img class="outter-svg" src="img/line-bottom.svg" alt="line">
+        <div id="form" class="form" autocomplete="off">
+            <img class="inner-svg" src="img/line-top.svg" alt="line">
+            <!--         <svg class="form-svg" viewBox="0 0 524 498" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"
+            stroke-miterlimit="1.5">
+            <path fill="none" d="M0 0h523.8v497.7H0z" />
+            <path d="M1260 540l-240 240M660 360l240-180" fill="none" stroke="#da70b8" stroke-width="5.1"
+                transform="matrix(.78348 0 0 .78348 -490.3 -127.2)" />
+            <path d="M900 180l360 360M1020 780L660 360" fill="none" stroke="#c792df" stroke-width="5.1"
+                transform="matrix(.78348 0 0 .78348 -490.3 -127.2)" />
+        </svg> -->
+            <h3>Learn Geometry</h3>
+            <div class="form-control">
+                <input autocomplete="off" name="username" type="text" id="username" required>
+                <label for="username"><span>Username</span></label>
+            </div>
+            <div class="form-control">
+                <input autocomplete="off" name="password" type="password" id="password" required>
+                <label for="password"><span>Password</span></label>
+            </div>
+            <button>Sign Up</button>
         </div>
-        <div class="form-control">
-            <input autocomplete="off" name="password" type="password" id="password" required>
-            <label for="email"><span>Password</span></label>         
-        </div>
-        <button>Sign Up</button>
     </div>
-    
+
     <script src="js/index.js"></script>
 </body>
+
 </html>
