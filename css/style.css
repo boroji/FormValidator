@@ -60,20 +60,6 @@ p {
   font-weight: 400;
 }
 
-.svg-wrapper {
-  width: 250px;
-  position: relative;
-  z-index: 2;
-}
-
-.svg-wrapper .outter-svg {
-  position: absolute;
-  -webkit-transform: scale(2.1);
-          transform: scale(2.1);
-  z-index: 1;
-  bottom: 45px;
-}
-
 .form {
   background-color: #263238;
   -webkit-box-shadow: 0px 0px 20px 2px #000000;
@@ -84,14 +70,6 @@ p {
   border-bottom-left-radius: 40px;
   position: relative;
   z-index: 20;
-}
-
-.form .inner-svg {
-  position: absolute;
-  -webkit-transform: scale(2.1);
-          transform: scale(2.1);
-  z-index: 1;
-  top: 30px;
 }
 
 .form h3 {
@@ -199,5 +177,69 @@ p {
 .form-control input:valid + label::after {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.svg-wrapper {
+  width: 250px;
+  position: relative;
+  z-index: 2;
+}
+
+.svg-wrapper .outter-svg {
+  position: absolute;
+  -webkit-transform: scale(2.1);
+          transform: scale(2.1);
+  z-index: 1;
+  bottom: 45px;
+  pointer-events: none;
+}
+
+.svg-wrapper .outter-svg path:nth-child(1) {
+  stroke-dashoffset: 732.1728515625px;
+  stroke-dasharray: 732.1728515625px;
+  -webkit-animation: svgLine 2s ease infinite alternate;
+          animation: svgLine 2s ease infinite alternate;
+}
+
+.svg-wrapper .outter-svg path:nth-child(2) {
+  stroke-dashoffset: 494.9747619628906px;
+  stroke-dasharray: 494.9747619628906px;
+  -webkit-animation: svgLine 2s ease infinite alternate;
+          animation: svgLine 2s ease infinite alternate;
+}
+
+.inner-svg {
+  position: absolute;
+  -webkit-transform: scale(2.1);
+          transform: scale(2.1);
+  z-index: 1;
+  top: 30px;
+  pointer-events: none;
+}
+
+.inner-svg path:nth-child(1) {
+  stroke-dashoffset: 678.822509765625px;
+  stroke-dasharray: 678.822509765625px;
+  -webkit-animation: svgLine 2s ease infinite alternate;
+          animation: svgLine 2s ease infinite alternate;
+}
+
+.inner-svg path:nth-child(2) {
+  stroke-dashoffset: 420.2200012207031px;
+  stroke-dasharray: 420.2200012207031px;
+  -webkit-animation: svgLine 2s ease infinite alternate;
+          animation: svgLine 2s ease infinite alternate;
+}
+
+@-webkit-keyframes svgLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes svgLine {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
