@@ -69,18 +69,34 @@ p {
 }
 
 .form h3 {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .form button {
+  margin-top: 20px;
   outline: none;
   border: none;
-  background-color: #f9ce62;
-  color: #192227;
-  font-weight: 400;
+  background: -webkit-gradient(linear, left top, right top, from(#da70b8), to(#c792df));
+  background: linear-gradient(90deg, #da70b8 0%, #c792df 100%);
+  color: #ffffff;
+  font-weight: 700;
   width: 100%;
   padding: 5px 12px;
   border-radius: 2px;
+  opacity: 0.8;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 0px 0px 5px 1px #000000;
+          box-shadow: 0px 0px 5px 1px #000000;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#da70b8), to(#c792df));
+  background: linear-gradient(0deg, #da70b8 0%, #c792df 100%);
+  -webkit-box-shadow: 0px 0px 10px 2px #000000;
+          box-shadow: 0px 0px 10px 2px #000000;
+  opacity: 1;
 }
 
 .form small {
@@ -96,7 +112,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   position: relative;
   overflow: hidden;
 }
@@ -105,21 +121,21 @@ p {
   width: 100%;
   height: 100%;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   color: #ffffff;
   position: absolute;
   bottom: 0;
   left: 0;
   pointer-events: none;
-  border-bottom: 2px solid #192227;
+  border-bottom: 1px solid #ffffff;
 }
 
 .form-control label span {
   position: absolute;
   bottom: 5px;
   left: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .form-control label::after {
@@ -127,13 +143,13 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-bottom: 3px solid #f9ce62;
-  bottom: -1px;
+  border-bottom: 2px solid #DA70B8;
+  bottom: -2px;
   left: 0;
   -webkit-transform: translateX(-110%);
           transform: translateX(-110%);
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .form-control input {
@@ -150,10 +166,11 @@ p {
 .form-control input:valid + label span {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  color: #f9ce62;
+  color: #DA70B8;
 }
 
-.form-control input:focus + label::after {
+.form-control input:focus + label::after,
+.form-control input:valid + label::after {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
