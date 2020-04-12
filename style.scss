@@ -12,6 +12,7 @@ $negative: #ffffff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 *:before,
@@ -82,6 +83,7 @@ p {
         border: none;
         background: linear-gradient(90deg, #da70b8 0%, #c792df 100%);
         color: $negative;
+        font-size: 14px;
         font-weight: 700;
         width: 100%;
         padding: 12px 12px;
@@ -96,11 +98,6 @@ p {
             box-shadow: 0px 0px 10px 2px #000000;
             opacity: 1;
         }
-    }
-
-    small {
-        font-size: 12px;
-        font-weight: 300;
     }
 }
 
@@ -144,6 +141,7 @@ p {
     }
 
     input {
+        font-size: 14px;
         background-color: transparent;
         color: $negative;
         width: 100%;
@@ -180,13 +178,13 @@ p {
         path:nth-child(1) {
             stroke-dashoffset: 732.1728515625px;
             stroke-dasharray: 732.1728515625px;
-            animation: svgLine 2s ease infinite alternate;
+            animation: svgLine 2s ease 2s infinite alternate;
         }
 
         path:nth-child(2) {
             stroke-dashoffset: 494.9747619628906px;
             stroke-dasharray: 494.9747619628906px;
-            animation: svgLine 2s ease infinite alternate;
+            animation: svgLine 2s ease 1.5s infinite alternate;
         }
     }
 }
@@ -201,13 +199,13 @@ p {
     path:nth-child(1) {
         stroke-dashoffset: 678.822509765625px;
         stroke-dasharray: 678.822509765625px;
-        animation: svgLine 2s ease infinite alternate;
+        animation: svgLine 2s ease 1s infinite alternate;
     }
 
     path:nth-child(2) {
         stroke-dashoffset: 420.2200012207031px;
         stroke-dasharray: 420.2200012207031px;
-        animation: svgLine 2s ease infinite alternate;
+        animation: svgLine 2s ease 0.5s infinite alternate;
     }
 }
 
